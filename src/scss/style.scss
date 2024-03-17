@@ -1,11 +1,11 @@
 @import "fonts";
+@import "variables";
 
 body {
   background-color: #333;
-  font-family: Roboto;
-  font-weight: 200;
+  font-family: "Pacifico", cursive;
   span {
-    color: red;
+    color: $first-color;
     display: flex;
   }
   background-image: linear-gradient(green, yellow);
