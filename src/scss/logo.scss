@@ -1,0 +1,28 @@
+.logo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+
+  .logo__image {
+    display: block;
+    height: 28px;
+    width: 28px;
+    @media screen and (min-width: $burger-responsive) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  .logo__text {
+    color: $white-color;
+    font-family: "Pacifico", cursive;
+    font-size: 1rem;
+    margin-top: 4px;
+    @media screen and (min-width: $burger-responsive) {
+      font-size: 1.25rem;
+      margin-top: -1px;
+    }
+  }
+}

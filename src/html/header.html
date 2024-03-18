@@ -1,3 +1,59 @@
-<header>
-  <h1>Header!</h1>
+<header class="header">
+  <div class="header__inner">
+    <div class="header__logo">@@include('./logo.html', {})</div>
+
+    <nav class="header__navbar">
+      <ul class="header__navbar-list">
+        <li class="header__navbar-item">
+          <a href="" class="header__navbar-link">
+            <img
+              src="@img/svgicons/ri_home-5-fill.svg"
+              alt="home"
+              class="header__navbar-icon"
+            />
+            <span class="header__navbar-link-text">Home</span>
+          </a>
+        </li>
+
+        <li class="header__navbar-item">
+          <a href="" class="header__navbar-link">
+            <img
+              src="@img/svgicons/ri_award-fill.svg"
+              alt="award"
+              class="header__navbar-icon"
+            />
+            <span class="header__navbar-link-text">About</span>
+          </a>
+        </li>
+
+        <li class="header__navbar-item">
+          <a href="" class="header__navbar-link">
+            <img
+              src="@img/svgicons/ri_compass-3-fill.svg"
+              alt="compass"
+              class="header__navbar-icon"
+            />
+            <span class="header__navbar-link-text">Steps</span>
+          </a>
+        </li>
+
+        <li class="header__navbar-item">
+          <a href="" class="header__navbar-link">
+            <img
+              src="@img/svgicons/ri_message-3-fill.svg"
+              alt="message"
+              class="header__navbar-icon"
+            />
+            <span class="header__navbar-link-text">Testimonial</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__burger">
+      <div class="header__burger_bar-1"></div>
+      <div class="header__burger_bar-2"></div>
+      <div class="header__burger_bar-3"></div>
+    </div>
+  </div>
 </header>
