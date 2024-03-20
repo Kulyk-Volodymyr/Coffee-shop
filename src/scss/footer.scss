@@ -1,3 +1,177 @@
 .footer {
-  height: 600px;
+  background-image: $bg-img-1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $first-color-alt;
+  padding: 4rem 1.5rem 3rem 1.5rem;
+  @media screen and (min-width: $md-responsive) {
+    padding: 6rem 3rem 3rem 3rem;
+  }
+
+  .footer__inner {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: auto;
+    @media screen and (min-width: $md-responsive) {
+      gap: 6.5rem;
+      max-width: 1120px;
+    }
+
+    .footer__top {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 4.5rem;
+      @media screen and (min-width: $md-responsive) {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+      }
+
+      .footer-logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+        @media screen and (min-width: $md-responsive) {
+          align-items: flex-start;
+          gap: 1.75rem;
+        }
+
+        .footer-logo__logo {
+          width: fit-content;
+        }
+
+        .footer-logo__text {
+          font-family: "Pacifico", cursive;
+          font-size: 1.75rem;
+          font-weight: 400;
+          @media screen and (min-width: $md-responsive) {
+            font-size: 2rem;
+          }
+          @media screen and (min-width: $lg-responsive) {
+            font-size: 2.25rem;
+          }
+        }
+      }
+
+      .footer-form-container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @media screen and (min-width: $md-responsive) {
+          gap: 1.5rem;
+        }
+
+        .footer-form {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          width: 100%;
+          @media screen and (min-width: $md-responsive) {
+            gap: 1.5rem;
+          }
+
+          .footer-form__email-label {
+            display: none;
+          }
+
+          .footer-form__email {
+            background-color: transparent;
+            border: 2px solid $text-color-light;
+            border-radius: 2rem;
+            color: $text-color-light;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.938rem;
+            font-weight: 500;
+            line-height: 1.5;
+            outline: none;
+            padding: 1rem;
+            width: 100%;
+            @media screen and (min-width: $md-responsive) {
+              font-size: 1rem;
+            }
+            &:focus {
+              border-color: $white-color;
+              color: $white-color;
+            }
+          }
+
+          .footer-form__btn {
+            width: 100%;
+          }
+        }
+
+        .privacy-policy {
+          color: $white-color;
+          font-family: "Poppins", sans-serif;
+          font-size: 0.813rem;
+          font-weight: 300;
+          line-height: 1.5;
+          @media screen and (min-width: $md-responsive) {
+            font-size: 0.875rem;
+          }
+
+          a {
+            color: $second-color;
+            font-size: inherit;
+            font-weight: inherit;
+            text-decoration: none;
+            transition: 0.4s;
+            &:hover {
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__bottom {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+
+      .footer__bottom-social {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        @media screen and (min-width: $md-responsive) {
+          gap: 3rem;
+        }
+
+        svg:hover {
+          cursor: pointer;
+        }
+
+        svg path {
+          transition: 0.4s;
+        }
+
+        svg:hover path {
+          fill: $second-color;
+        }
+      }
+
+      .footer__bottom-copyright {
+        color: $text-color-light;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 300;
+        line-height: 1.5;
+        @media screen and (min-width: $md-responsive) {
+          font-size: 0.813rem;
+        }
+      }
+    }
+  }
 }

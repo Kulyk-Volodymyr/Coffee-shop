@@ -1,20 +1,53 @@
 .button {
+  align-items: center;
   border: none;
+  border-radius: 2rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
-  font-weight: 400;
+  font-weight: 600;
+  justify-content: center;
+  gap: 1rem;
   outline: none;
-  padding: 1rem;
+  padding: 1.25rem 2rem;
   @media screen and (min-width: $lg-responsive) {
     font-size: 1rem;
   }
 }
 
-.button_color_brown {
+.button_yellow {
+  background-color: $second-color;
+  box-shadow: 0rem 0.5rem 1rem #ddb66f50;
   color: $title-color;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $white-color;
+    box-shadow: 0rem 0.5rem 1rem #ffffff80;
+  }
 }
 
-.button_bg-color_yellow {
-  background-color: $second-color;
+.button_brown {
+  background-color: $first-color-alt;
+  box-shadow: 0rem 0.5rem 1rem #2b171250;
+  color: $white-color;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $second-color;
+    box-shadow: 0rem 0.5rem 1rem #ddb66f50;
+    color: $first-color-alt;
+  }
+
+  svg path {
+    fill: $white-color;
+    transition: 0.4s;
+  }
+
+  &:hover svg path {
+    fill: $first-color-alt;
+    transition: 0.4s;
+  }
 }

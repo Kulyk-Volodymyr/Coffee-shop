@@ -1,4 +1,4 @@
-.about {
+.testimonial {
   background-color: $container-color;
   padding: 2.62rem 1.5rem 6rem 1.5rem;
   scroll-margin: 62px;
@@ -15,7 +15,7 @@
     padding: 4rem 4.5rem 10.25rem 4.5rem;
   }
 
-  .about__inner {
+  .testimonial__inner {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -24,31 +24,32 @@
     margin: auto;
     max-width: 500px;
     @media screen and (min-width: $md-responsive) {
-      flex-direction: row-reverse;
+      flex-direction: row;
       max-width: 1120px;
     }
 
-    .about__text {
+    .testimonial__text {
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
       @media screen and (min-width: $md-responsive) {
+        gap: 3rem;
         flex: 1;
-        max-width: 465px;
+        max-width: 520px;
       }
 
-      .about__text-p {
+      .testimonial__text-p {
         @media screen and (min-width: $md-responsive) {
           text-align: left;
         }
       }
     }
 
-    .about__img-container {
+    .testimonial__img-container {
       @media screen and (min-width: $md-responsive) {
         flex: 1;
       }
-      .about__img {
+      .testimonial__img {
         display: block;
         max-width: 100%;
         width: auto;

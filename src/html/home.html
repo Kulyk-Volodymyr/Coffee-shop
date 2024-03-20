@@ -1,31 +1,43 @@
-<section class="home">
+<section class="home" id="home">
   <div class="home__inner">
     <div class="home__info">
       <p class="home__info-first-p">EXCEPTIONAL QUALITY</p>
-      <div>
-        <h1 class="font-h1">It's time for a<br />good coffee</h1>
+
+      <div class="home__title">
+        <h1 class="home__title-text">It's time for a<br />good coffee</h1>
+        <img
+          src="@img/home-coffee-title.png"
+          alt="coffee beans"
+          class="home__title-img"
+        />
       </div>
-      <p class="font-p font_color_white">
+
+      <p class="font-p font_color_white home__info-second-p">
         Each select coffee bean reflects our commitment to Peruvian coffee
         growers, who bring the best select coffee to your table.
       </p>
-      <button class="button button_color_brown button_bg-color_yellow">
-        <span>Get Started</span>
-        <svg
-          width="8"
-          height="14"
-          viewBox="0 0 8 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5.17198 7.16669L0.221985 2.21669L1.63598 0.802689L7.99998 7.16669L1.63598 13.5307L0.221985 12.1167L5.17198 7.16669Z"
-            fill="#2E2624"
-          />
-        </svg>
-      </button>
+
+      <div class="home__btn-container">
+        <button class="button button_yellow">
+          <span>Get Started</span>
+          <svg
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.17198 7.16669L0.221985 2.21669L1.63598 0.802689L7.99998 7.16669L1.63598 13.5307L0.221985 12.1167L5.17198 7.16669Z"
+              fill="#2E2624"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <img src="@img/home-coffee.png" alt="" class="home__image" />
+    <div class="home__image-container">
+      <img src="@img/home-coffee.png" alt="" class="home__image" />
+    </div>
   </div>
 </section>

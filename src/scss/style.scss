@@ -1,6 +1,8 @@
 @import "fonts";
 @import "variables";
 
+$bg-img-1: url("@img/bg-coffee-beans.png");
+
 *,
 *::after,
 *::before {
@@ -11,6 +13,10 @@
 
 @import "normalize";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 260px;
 }
@@ -18,8 +24,8 @@ body {
 @import "button";
 
 .section-top-mod {
-  border-radius: 2.75rem 2.75rem 0 0;
-  margin-top: -2.75rem;
+  border-radius: 3rem 3rem 0 0;
+  margin-top: -3rem;
   @media screen and (min-width: $sm-responsive) {
     border-radius: 4rem 4rem 0 0;
     margin-top: -4rem;
@@ -34,13 +40,20 @@ body {
   }
 }
 
-.font-h1 {
-  color: $white-color;
+.font-h2 {
   font-family: "Pacifico", cursive;
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   font-weight: 400;
+  text-align: center;
+  @media screen and (min-width: $sm-responsive) {
+    font-size: 2.125rem;
+  }
+  @media screen and (min-width: $md-responsive) {
+    font-size: 2.625rem;
+    text-align: left;
+  }
   @media screen and (min-width: $lg-responsive) {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -49,13 +62,18 @@ body {
   font-size: 0.938rem;
   font-weight: 300;
   line-height: 1.5;
-  @media screen and (min-width: $lg-responsive) {
+  text-align: center;
+  @media screen and (min-width: $md-responsive) {
     font-size: 1rem;
   }
 }
 
 .font_color_white {
   color: $white-color;
+}
+
+.font_color_dark-brown {
+  color: $title-color;
 }
 
 .font_color_brown {
@@ -68,5 +86,5 @@ body {
 @import "products";
 @import "about";
 @import "steps";
-
+@import "testimonial";
 @import "footer";

@@ -1,31 +1,124 @@
 .home {
   background-color: $first-color;
   background-image: linear-gradient($first-color 6rem, $first-color-alt);
-  padding: 5rem 2rem 4rem 2rem;
+  padding: 7.25rem 2rem 6rem 2rem;
+  @media screen and (min-width: $lg-responsive) {
+    padding: 9.625rem 3rem 10rem 3rem;
+  }
 
   .home__inner {
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
     justify-content: space-between;
+    margin: auto;
+    max-width: 500px;
     @media screen and (min-width: $lg-responsive) {
       flex-direction: row-reverse;
+      max-width: 1070px;
     }
 
     .home__info {
+      @media screen and (min-width: $lg-responsive) {
+        margin-right: 1rem;
+        width: 430px;
+      }
+
       .home__info-first-p {
         color: $second-color;
         font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;
+        font-weight: 500;
+        font-size: 0.938rem;
+        text-align: center;
         text-transform: uppercase;
+        @media screen and (min-width: $lg-responsive) {
+          font-size: 1rem;
+          text-align: left;
+          font-weight: 600;
+        }
+      }
+
+      .home__title {
+        margin: auto;
+        position: relative;
+        width: fit-content;
+        @media screen and (min-width: $lg-responsive) {
+          margin: 0;
+        }
+
+        .home__title-text {
+          color: $white-color;
+          font-family: "Pacifico", cursive;
+          font-size: 2rem;
+          font-weight: 400;
+          margin: 1rem 0 2.5rem 0;
+          position: relative;
+          @media screen and (min-width: $xsm-responsive) {
+            font-size: 2.75rem;
+          }
+          @media screen and (min-width: $sm-responsive) {
+            font-size: 3.5rem;
+          }
+          @media screen and (min-width: $md-responsive) {
+            font-size: 4rem;
+          }
+          @media screen and (min-width: $lg-responsive) {
+            font-size: 4.5rem;
+          }
+        }
+
+        .home__title-img {
+          bottom: 0;
+          display: block;
+          margin-left: 1rem;
+          position: absolute;
+          right: 0;
+          width: 40px;
+          @media screen and (min-width: $xsm-responsive) {
+            width: 60px;
+          }
+          @media screen and (min-width: $sm-responsive) {
+            width: 70px;
+          }
+          @media screen and (min-width: $md-responsive) {
+            width: 80px;
+          }
+          @media screen and (min-width: $lg-responsive) {
+            width: 95px;
+          }
+        }
+      }
+
+      .home__info-second-p {
+        @media screen and (min-width: $lg-responsive) {
+          max-width: 400px;
+          text-align: left;
+        }
+      }
+
+      .home__btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+        @media screen and (min-width: $lg-responsive) {
+          justify-content: flex-start;
+          margin-top: 3rem;
+        }
       }
     }
 
-    .home__image {
-      display: block;
-      max-width: 100%;
-      width: auto;
+    .home__image-container {
+      @media screen and (min-width: $lg-responsive) {
+        flex: 1;
+      }
+
+      .home__image {
+        display: block;
+        max-width: 100%;
+        width: auto;
+      }
     }
   }
 }

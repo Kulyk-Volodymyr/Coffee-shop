@@ -1,4 +1,6 @@
 .header {
+  background-color: #492d2690;
+  backdrop-filter: blur(2px);
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-image: repeating-linear-gradient(
@@ -12,12 +14,15 @@
   left: 0;
   position: fixed;
   top: 0;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   width: 100%;
   z-index: 10;
   @media screen and (min-width: $burger-responsive) {
     padding: 1.75rem;
     position: absolute;
+  }
+  @media screen and (min-width: $md-responsive) {
+    padding: 1.75rem 3rem;
   }
 
   .header__inner {
@@ -93,7 +98,7 @@
               font-family: "Pacifico", cursive;
               font-size: 0.625rem;
               transition: 0.4s;
-              @media screen and (min-width: 340px) {
+              @media screen and (min-width: $xsm-responsive) {
                 font-size: 0.813rem;
               }
               @media screen and (min-width: $burger-responsive) {
